@@ -10,9 +10,10 @@ source_directory = '/path/to/source_directory'
 
 # Create a dictionary to map file extensions to destination folders
 file_extension_to_folder = {
-    '.txt': '/path/to/text_files_folder',
-    '.jpg': '/path/to/image_files_folder',
-    '.mp3': '/path/to/audio_files_folder',
+    '.txt': '/text',
+    '.jpg''.png': '/image',
+    '.mp3': '/audio',
+    '.mp4': '/video',
     # Add more file extensions and corresponding folders as needed
 }
 
@@ -36,3 +37,4 @@ for filename in os.listdir(source_directory):
             shutil.move(file_path, os.path.join(destination_folder, filename))
 
 print("File sorting completed.")
+
